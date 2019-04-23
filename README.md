@@ -16,3 +16,39 @@ let firstString = "hello World";
 ```
 let firstString: string = "hello World";
 ```
+- defining variables:
+```
+console.log("hell world");
+
+//create variable string
+let firstString: string = "hello world";
+
+// Number
+let firstNumber: number = 8;
+
+// Boolean
+let firstBoolean: boolean = false;
+
+//any
+let anyType: any = 5;
+let anyType2: any = false;
+let anyType3: any = "hello";
+```
+
+### typescript interfaces
+- use **interface** to define an interface with variables inside. 
+- use **var** to create an object
+- use **: personInterface** to specify that var person is a personInterface
+```
+interface personInterface{
+    firstName: string;
+    lastName: string;
+    age: number;
+}
+
+var person: personInterface = {
+    firstName: "John",
+    lastName: "Mark",
+    age: 1
+}
+```
