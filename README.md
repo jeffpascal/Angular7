@@ -52,3 +52,23 @@ var person: personInterface = {
     age: 1
 }
 ```
+
+### Classes
+- **constructor** keyword to create a constructor, specify the variable as parameter as well
+- define a new method thePerson(): void where **:void** is the return type of the method
+- instantiate with **new person("")**
+```
+class person{
+    private firstName: string;
+
+    constructor(theFirstName: string){
+        this.firstName = theFirstName;
+    }
+
+    thePerson(): void {
+        console.log(this.firstName);
+    }
+}
+
+var obj = new person('John');
+```
