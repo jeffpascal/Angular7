@@ -53,7 +53,7 @@ var person: personInterface = {
 }
 ```
 
-### Classes
+### Classes - not like java
 - **constructor** keyword to create a constructor, specify the variable as parameter as well
 - define a new method thePerson(): void where **:void** is the return type of the method
 - instantiate with **new person("")**
