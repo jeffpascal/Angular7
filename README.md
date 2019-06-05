@@ -1,4 +1,13 @@
-# Angular7
+- Reasons to use angular
+- organized front-end structure (components, modules, services)
+- good for single page applications
+- mvc pattern
+- typescript
+- cli (command line interface) you can generate things fast
+
+
+
+# Angular
 - .ts files need to be compiled into js files for the browser to use them
 
 ### Compiling
