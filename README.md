@@ -1,10 +1,22 @@
-- Reasons to use angular
+# Reasons to use angular
 - organized front-end structure (components, modules, services)
 - good for single page applications
 - mvc pattern
 - typescript
 - cli (command line interface) you can generate things fast
 
+## Project setup
+- ng new <project name>
+- ng serve --open to open in brwser and to run the server
+- ng build when you're ready to deploy, will create a thing to  put on the server.
+    
+index.html
+```
+<app-root></app-root>
+```
+is where all the components we create will go 
+
+The file **angular.json** is where we can import assests and styles like bootstrap or local files
 
 
 # Angular
