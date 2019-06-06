@@ -1,3 +1,6 @@
+# Todo  
+- Pick a course and finish it o'reilly
+
 # Reasons to use angular
 - organized front-end structure (components, modules, services)
 - good for single page applications
