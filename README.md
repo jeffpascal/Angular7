@@ -9,7 +9,7 @@
 - cli (command line interface) you can generate things fast
 
 ## Project setup
-- ng new <project name>
+- ng new \<project name>
 - ng serve --open to open in brwser and to run the server
 - ng build when you're ready to deploy, will create a thing to  put on the server.
 
