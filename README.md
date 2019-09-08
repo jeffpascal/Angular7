@@ -236,3 +236,7 @@ class person{
 
 var obj = new person('John');
 ```
+
+
+# Angular Max
+- tie a variable from the code to the html is done with ngModel
