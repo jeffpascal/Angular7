@@ -1,3 +1,5 @@
+
+
 # Todo  
 - Pick a course and finish it o'reilly
 
@@ -237,6 +239,58 @@ class person{
 var obj = new person('John');
 ```
 
+## *ngFor
+
+- Must be let keyword
+- index can be taken
+'''
+  <div *ngFor="let item of products; let i = index">{{item.name}} + " +{{i}}
+'''
+
+## Binding
+
+- *ngFor
+- *ngIf
+- Interpolation {{ }} - text from js
+- Property binding [ ] - html properties (ex: alt, title, type)
+- Event binding ( ) - javascript events (ex: click, hover)
 
 # Angular Max
 - tie a variable from the code to the html is done with ngModel
+
+## Notifying parents
+
+1. Create a child component
+2. To get a product from parent we use '''@Input() variable;'''
+  - We pass with property binding '''[product] = item''' from parent
+3. To emit an event we use '''@Output() notify = new EventEmitter();'''
+  - We trigger it with '''(click)="notify.emit()'''
+  - We get it with event Bindind '''(notify) = onNotify()'''
+  
+'''typescript
+import { Component } from '@angular/core';
+import { Input , OnInit} from '@angular/core';
+import { Output, EventEmitter } from '@angular/core';
+
+@Component({
+  selector: 'app-product-alerts',
+  templateUrl: './product-alerts.component.html',
+  styleUrls: ['./product-alerts.component.css']
+})
+export class ProductAlertsComponent implements OnInit {
+
+  @Input() product;
+  @Output() notify = new EventEmitter();
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+}
+'''
+
+'''
+<p>
+  <button *ngIf="product.price > 700" (click)="notify.emit()"> Alert me</button>
+</p>
+'''
